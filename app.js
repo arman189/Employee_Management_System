@@ -6,7 +6,7 @@ require("./db/conn");
 
 const cors = require("cors");
 const router = require("./Routes/router");
-const PORT = 6010;
+const PORT = process.env.PORT || 6010;
 
 // app.get("/", (req, res) => {
 //   res.status(201).json("Server start");
